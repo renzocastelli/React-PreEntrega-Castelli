@@ -1,7 +1,10 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
 const DetalleProducto = (props) => {
   const { nombre, descripcion, precio, imagen, detallesAdicionales } = props;
+  const { id } = useParams();
+
 
   return (
     <div className="container mt-4">
@@ -23,6 +26,7 @@ const DetalleProducto = (props) => {
               </ul>
             </div>
           )}
+          <p>ID del producto: {id}</p>
         </div>
       </div>
     </div>

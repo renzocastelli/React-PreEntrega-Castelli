@@ -13,12 +13,16 @@ const DetalleProducto = (props) => {
           <h2>{nombre}</h2>
           <p>Precio: {precio}</p>
           <p>{descripcion}</p>
-          <h4>Detalles Adicionales:</h4>
-          <ul>
-            {detallesAdicionales.map((detalle, index) => (
-              <li key={index}>{detalle}</li>
-            ))}
-          </ul>
+          {detallesAdicionales && detallesAdicionales.length > 0 && (
+            <div>
+              <h4>Detalles Adicionales:</h4>
+              <ul>
+                {detallesAdicionales.map((detalle, index) => (
+                  <li key={index}>{detalle}</li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -22,7 +22,7 @@ function App() {
             <Route path='/catalogo' element={<CatalogoHardware placasDeVideo={placasDeVideo} />} />
             <Route path='/carrito' element={<Carrito />} />
             <Route path='*' element={<Error404 />} />
-            <Route path='/detalles/:id' element={<DetalleProducto nombre="Placa de video:" descripcion="Lorem ipsum dolor sit amet consectetur adipiscing elit posuere netus, malesuada vulputate accumsan integer etiam ." precio="$..." imagen="" detallesAdicionales={[/* ... */]} />} />
+            <Route path='/detalles/:id' element={<DetalleProducto nombre="Placa de video:" descripcion="Lorem ipsum dolor sit amet consectetur adipiscing elit posuere netus, malesuada vulputate accumsan integer etiam ." precio="$..." imagen=""  />} />
           </Routes>
         </header>
       </BrowserRouter>

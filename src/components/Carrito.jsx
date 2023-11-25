@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 const Carrito = () => {
   const [productos, setProductos] = useState([
-    { id: 1, nombre: 'Smartphone', precio: 499, cantidad: 1 },
-    { id: 2, nombre: 'Portátil', precio: 999, cantidad: 2 },
+    { id: 1, nombre: 'RTX 3080', precio: 499, cantidad: 1 },
+    { id: 2, nombre: 'AMD Radeon 6700XT', precio: 999, cantidad: 2 },
     // Aca se agregarian mas productos al carrito
   ]);
 
